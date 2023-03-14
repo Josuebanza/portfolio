@@ -1,0 +1,26 @@
+body
+{
+    font-family: 'Segoe UI', Georgia, 'Times New Roman', Times, serif;
+    background-color: #ededed;
+}
+
+table, th, td {
+    padding : 2px;
+    border : 1px solid darkblue;
+    border-color : collapse;
+}
+
+th, td {
+    padding: 2px;
+    text-align: center;
+    color: darkslategray;
+}
+
+table {
+    border-collapse:collapse;
+    width: 600px;
+    height: 300px;
+}
+thead {
+    background-color: aquamarine;
+}
