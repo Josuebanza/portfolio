@@ -1,7 +1,17 @@
 body
 {
-    font-family: 'Segoe UI', Georgia, 'Times New Roman', Times, serif;
+    margin:50px;
+    margin-right: 450px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: #ededed;
+    font-size: 16px;
+}
+
+h1,h2 {
+    text-align: center;
+    color: darkblue;
+    font-size:25px ;
+    background-color: darkgray;
 }
 
 table, th, td {
@@ -23,4 +33,7 @@ table {
 }
 thead {
     background-color: aquamarine;
+}
+label{
+    color:gray;
 }
