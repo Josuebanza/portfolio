@@ -1,17 +1,32 @@
 body
 {
-    margin:50px;
-    margin-right: 450px;
+    margin:auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: #ededed;
     font-size: 16px;
 }
+nav{
+    text-align: end;
+}
+header,footer{
+    background-color: darkseagreen;
 
+}
+.navigateur{
+    display: flex;
+    align-items: end;
+}
+.conteneur{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 h1,h2 {
     text-align: center;
     color: darkblue;
     font-size:25px ;
-    background-color: darkgray;
+    background-color: lightgreen;
 }
 
 table, th, td {
@@ -36,4 +51,23 @@ thead {
 }
 label{
     color:gray;
+}
+a:link, a:visited {
+    color:white;
+    background-color:#1ebba3;
+    display:inline-block;
+    padding:5px 10px;
+    border:2px solid #099983;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+}
+a:hover, a:active {
+    background-color: #9c6ae1;
+    border-color:#7443b6;
+}
+ul{
+    list-style-type: square;
+}
+ul{
+    list-style: square;
 }
