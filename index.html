@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Josué Banza</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Josué banza</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">à propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projets" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Salut, Je suis</p>
+        <h1 class="title">Josué Banza</h1>
+        <p class="section__text__p2">Etudiant en Informatique</p>
+        <div class="btn-container">
+          <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button> -->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon
+          contact-icon email-icon"" onclick="
+          location.href='https://josuemushikonke@gmail.com'" />
+          <img
+            src=" ./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Josuebanza'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Savoir plus</p>
+      <h1 class="title">A propos de moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.PNG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2 ans <br />Dévelopment web</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                En cours de 3 ème année de Licence<br />Science Informatique
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Je m’appelle Josué Banza, passionné par le développement
+              d’applications et la musique, avec une formation de 2 ans en
+              sciences informatiques. Depuis toujours, je suis animé par la
+              curiosité pour les nouvelles technologies et leurs possibilités
+              infinies. Mon ambition ? Contribuer à bâtir un monde où la
+              technologie simplifie la vie, tout en favorisant un partage
+              d’information décentralisé et équitable.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#hobby'"
+      />
+    </section>
+
+    <section id="hobby">
+      <p class="section__text__p1"></p>
+      <h1 class="title">
+        Centre d'interêt <br />
+        Inspirations
+      </h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Centre d'interêt</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Développement web</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Musique / Piano</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Métavers</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Gestion de projet</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Échecs</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Inspirations</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ready Player One</h3>
+                  <p>Film preferé</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mark Zuckerberg</h3>
+                  <p>Partage la même vision</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google</h3>
+                  <p>Rêve d'enfant de bosser Google</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Forêt de Piano</h3>
+                  <p>Série d'Animation Japonaise</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#activites'"
+      />
+    </section>
+    <section id="activites">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Activités</h1>
+      <div class="section-container2">
+        <div class="about-detail-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Pianiste et responsable de jeunes</h3>
+              <p>
+                à Église Évangélique Luthérienne au Congo depuis 6 ans. En
+                charge des répétitions, des cultes et des événements spéciaux,
+                ainsi que de l’organisation et de la gestion financière d’un
+                groupe de jeunes.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Aide au laboratoire de chimie et biologie</h3>
+              <p>
+                au Collège Notre Dame d’Afrique de 2018 à 2022. Assister les
+                enseignants dans les expériences et assurer la maintenance du
+                matériel.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Aide au laboratoire Informatique</h3>
+              <p>
+                à Université Catholique du Congo en 2023. Installation de
+                machines virtuelles et d’antivirus, élimination de chevaux de
+                Troie, assistance aux enseignants et étudiants.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Développeur</h3>
+              <p>
+                pour le Complexe scolaire FM3 en 2023. Création d’un logiciel de
+                gestion des inscriptions et des paiements scolaires en utilisant
+                Visual Basic .Net et SQL Server.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#activites-extrascolaires'"
+      />
+    </section>
+    <section id="Activites-extrascolaires">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Activités extrascolaires</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Activites de Club</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Clubs de génie en herbe</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Club de Dictée Française</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Club d'Epellation Française</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Club d'échec</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Club d'informatiques</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>La Chorale</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projets'"
+      />
+    </section>
+    <section id="projets">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+              <div class="project-description" style="display: none">
+                <p>
+                  Contexte : Formation intensive de 18 heures en design UI/UX.
+                  Ce projet m’a permis de collaborer avec des designers
+                  talentueux, bien que je sois issu d’un profil
+                  analyste-programmeur. Mon rôle : Création et prototypage d’une
+                  page avec Figma, réalisation de tests utilisateurs. Résultats
+                  : Projet apprécié par les formateurs et enrichissement de mes
+                  compétences en design.
+                </p>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">EcoBop</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Josuebanza'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="toggleDescription(this)"
+              >
+                Description
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Logo vert.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="project-description" style="display: none">
+              <p>
+                Contexte : Un projet entrepreneurial mêlant économie verte et
+                technologie, développé lors de l’atelier "Deviens ton propre
+                boss" organisé par Orange Telecom. L’idée était de créer une
+                entreprise écoresponsable combinant poubelles intelligentes et
+                application mobile. Mon rôle : Rédacteur principal et stratège
+                en communication sur les réseaux sociaux. Résultats :
+                Présentation réussie devant des cadres d’Orange, des banquiers
+                et des autorités nationales.
+              </p>
+            </div>
+
+            <h2 class="experience-sub-title project-title">GreenBite</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Josuebanza'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="toggleDescription(this)"
+              >
+                Description
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/logoletecode.png"
+                alt="Project 3"
+                class="project-img zoom-text img-container"
+              />
+            </div>
+            <div class="project-description" style="display: none">
+              <p>
+                Contexte : Formation de 100 jours en développement web
+                full-stack, couvrant HTML, CSS, JavaScript, MVC, Git, PHP et
+                bases de données. Le projet consistait à créer un site vitrine
+                utilisant une API. Compétences acquises
+              </p>
+            </div>
+
+            <h2 class="experience-sub-title project-title">Letecode</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Josuebanza'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="toggleDescription(this)"
+              >
+                Description
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entrer en contact</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:josuemushikonke@gmail.com">Example@gmail.com</a>
+          </p>
+        </div>
+        <!--  <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169; 2024 Josué banza. All Rights Reserved. Portfolio de
+        Josué Banza | Créé avec HTML, CSS et JavaScript
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
